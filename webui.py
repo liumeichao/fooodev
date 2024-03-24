@@ -30,6 +30,9 @@ def get_task(*args):
     return worker.AsyncTask(args=args)
 
 def generate_clicked(task: worker.AsyncTask):
+
+    print("############\n", task)
+    
     import ldm_patched.modules.model_management as model_management
 
     with model_management.interrupt_processing_mutex:
