@@ -154,6 +154,7 @@ def join_prompts(*args, **kwargs):
 
 
 def generate_temp_filename(folder='./outputs/', extension='png'):
+    folder = '/content/drive/MyDrive/output/'
     current_time = datetime.datetime.now()
     date_string = current_time.strftime("%Y-%m-%d")
     time_string = current_time.strftime("%Y-%m-%d_%H-%M-%S")
